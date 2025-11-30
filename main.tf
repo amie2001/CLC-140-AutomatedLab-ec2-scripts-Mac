@@ -14,7 +14,6 @@ terraform {
 resource "aws_ec2_host" "mac_host" {
   availability_zone = "us-west-2a"
   instance_type     = "mac1.metal"
-  quantity          = 1
 }
 
 # macOS EC2 instance
