@@ -1,9 +1,9 @@
 provider "aws" {
-  region = "ap-southeast-1"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "mac_instance" {
-  ami           = "ami-0f8b0d25840c5e691" # mac2 M1 AMI Singapore
+  ami           = "ami-0aa6b06e4b2b64cfd" # mac2 M1 AMI for us-east-1
   instance_type = "mac2-m1.metal"
   key_name      = "Lab_env_Mac"
 
