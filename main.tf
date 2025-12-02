@@ -7,7 +7,7 @@ provider "aws" {
 #####################################################
 resource "aws_ec2_host" "mac_host" {
   availability_zone = "ap-southeast-1a"
-  instance_type     = "mac2-m1.metal"   # REQUIRED for mac2 AMI
+  instance_type     = "mac2.metal"   # REQUIRED for mac2 AMI
 }
 
 #####################################################
@@ -15,7 +15,7 @@ resource "aws_ec2_host" "mac_host" {
 #####################################################
 resource "aws_instance" "mac_instance" {
   ami               = "ami-0c4d1b01002bc5424"
-  instance_type     = "mac2-m1.metal"
+  instance_type     = "mac2.metal"
   availability_zone = "ap-southeast-1a"
 
   tenancy           = "host"                      # MUST
